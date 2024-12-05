@@ -6,10 +6,82 @@
 </head>
 
 <body>
-    <h1>Form 태그 실습</h1>
 
-    <p>앞서 학습한 폼 관련 태그를 이용하여 가입 폼을 작성해 봅시다.</p>
-    <p>비즈니스를 운영한다는 생각으로 서비스를 구상해 보고, 해당 비즈니스 모델에 적합한 입력 항목을 선정, 가입 폼을 작성해 봅니다.</p>
+    <h1>회원 가입</h1>
+
+    <form name="registerForm" action="#" method="post"></form>
+    <fieldset>
+        <legend>회원정보</legend> <br/>
+
+        <label for="username">사용자 이름</label>
+        <input type="text" id="username" name="username" placeholder="사용자 이름을 입력하세요" required /> <br />
+        <label for="email">이메일</label>
+        <input type="text" id="email" name="email" placeholder="이메일을 입력하세요" required /><br />
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" required /><br />
+        <label>비밀번호 확인
+            <input type="password" name="confirm_password" required />
+        </label> <br />
+        <label for="useraddress">주소</label>
+        <input type="text" id="useraddress" name="useraddress" placeholder="주소를 입력해주세요" required /> <br />
+        <label>성별</label>
+        <input type="radio" id="female" name="sex" value="f" checked />
+        <label for="female">여성</label>
+        <input type="radio" id="male" name="sex" value="m" />
+        <label for="male">남성</label> <br />
+        <label for="commit">특이사항</label><br />
+        <textarea id="comment" name="comment" rows="5" cols="40">내용</textarea><br /> <br/>
+        <label> 운동경력 </label>
+        <select id="career" name="career">
+            <option value="beginner" selected>처음</option>
+            <option value="under1">1년미만</option>
+            <option value="over1">1년이상</option>
+            <option value="master">개고수</option>
+        </select> <br/><br/>
+        <label>종목</label> <br/>
+        <input type="checkbox" id="pilates" name="favorite" value="p" />
+        <label for="pilates">필라테스</label>
+        <input type="checkbox" id="health" name="favorite" value="h" />
+        <label for="health">헬스</label>
+        <input type="checkbox" id="spinning" name="favorite" value="s" />
+        <label for="spinning">스피닝</label>
+        <input type="checkbox" id="PT" name="favorite" value="pt" />
+        <label for="PT">PT</label><br /><br /> 
+        <label>선호 트레이너</label> <br/>
+        <input type="checkbox" id="nam" name="teacher" value="n" />
+        <label for="nam">남승균</label>
+        <input type="checkbox" id="moon" name="favorite" value="m" />
+        <label for="moon">문호정</label>
+        <input type="checkbox" id="han" name="favorite" value="h" />
+        <label for="han">한준희</label>
+        <input type="checkbox" id="lee" name="favorite" value="lee" />
+        <label for="lee">이건민</label><br /> <br/>
+       
+        
+        <label>등록기간</label> <br/>
+        <input type="checkbox" id="1month" name="period" value="1m" />
+        <label for="1month">1개월</label>
+        <input type="checkbox" id="3months" name="period" value="3m" />
+        <label for="3months">3개월</label>
+        <input type="checkbox" id="6months" name="period" value="6m" />
+        <label for="6months">6개월</label>
+        <input type="checkbox" id="12months" name="period" value="12m" />
+        <label for="12months">12개월</label><br /><br />
+        <label>방문 경로</label> <br/>
+        <input type="checkbox" id="friend" name="visit" value="fr" />
+        <label for="friend">친구 소개</label>
+        <input type="checkbox" id="paper" name="visit" value="pa" />
+        <label for="paper">전단지</label>
+        <input type="checkbox" id="instar" name="visit" value="ins" />
+        <label for="instar">인스타/페이스북</label>
+        <input type="checkbox" id="etc" name="visit" value="etc" />
+        <label for="etc">기타</label><br/><br/>
+        <label for="etcs">기타 경로</label><br />
+        <textarea id="comment2" name="comment2" rows="3" cols="40">내용</textarea><br /><br /><br />
+
+        <input type="submit" value="가입하기" />
+        <input type="reset" value="다시 작성하기" />
+    </fieldset>
 
 </body>
 

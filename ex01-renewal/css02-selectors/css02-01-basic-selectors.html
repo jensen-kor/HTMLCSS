@@ -3,6 +3,30 @@
 
 <head>
     <title>CSS 선택자 예제</title>
+    <style>
+        /* 전체선책자 */
+        *{
+            color:gray;
+        }
+        h1{
+            background-color: red;
+        }
+        #apple{
+            color: red;
+        }
+        #banana {
+            color: yellow;
+        }
+        #orangd {
+            color: orange;
+        }
+        #grape {
+            color: purple;
+        }
+        .selected{
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,6 +38,8 @@
         <li>아이디 선택자 (#unique): 아이디가 unique인 요소에만 적용</li>
         <li>클래스 선택자 (.common): 클래스가 common인 모든 요소에 적용</li>
     </ul>
+
+    <h2>id, 클래스 선택자</h1>
 
     <ul>
         <li id="apple">사과</li>
