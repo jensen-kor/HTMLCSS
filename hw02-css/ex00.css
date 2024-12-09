@@ -1,0 +1,80 @@
+*{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size:17px;}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+h1 {
+    font-family: "궁서";
+    font-size: 30px;
+    font: 15px;
+    /* word-spacing: 10px; */
+    letter-spacing: 15px;
+}
+.internet {
+    font-family:'이탤릭 볼드';
+    color: #0000ff;
+}
+.info {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#ff0000
+}
+.ko {
+    text-decoration: underline;
+    color: #00ff00;
+}
+.num {
+    text-decoration: underline;
+}
+.mil {
+    color: #ff0000;
+}
+.history{
+    background-color: #d9d9d9;
+    p {
+        text-indent : 30px;
+    }
+   
+}
+.sun {
+    color: #00ff00;
+}
+li {
+    list-style-type: square;
+}
+.lol {
+    list-style-type: none;
+}
+
+tbody>tr:hover {
+    background-color: #EDD3ED;
+}
+thead{
+    background-color: #C8EBFA;
+}
+.mb {
+    text-align: right;
+   
+}
+.mb::after {
+    content:"(MB/초)";
+ }
+.mb::before{
+    content:"약"'
+}
+a {
+    color:#FFFFFF;
+}
+a:visited{
+    color: #FFFFFF;
+}
+a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+a::selection {
+    color: #0000ff;
+    text-decoration: underline;
+}
