@@ -64,17 +64,17 @@ thead{
 .mb::before{
     content:"약"'
 }
-a {
+table a {
     color:#FFFFFF;
 }
-a:visited{
+table a:visited{
     color: #FFFFFF;
 }
-a:hover{
+table a:hover{
     color: #0000ff;
     text-decoration: underline;
 }
-a::selection {
+table a::selection {
     color: #0000ff;
     text-decoration: underline;
 }
